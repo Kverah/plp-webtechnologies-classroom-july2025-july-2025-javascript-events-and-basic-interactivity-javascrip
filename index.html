@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 Welcome to My Interactive Page</h1>
+
+  <!-- Part 1: Event Handling Example -->
+  <section>
+    <h2>Click the Button!</h2>
+    <button id="messageBtn">Click Me</button>
+    <p id="messageOutput"></p>
+  </section>
+
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>🌗 Light/Dark Mode Toggle</h2>
+    <button id="themeToggle">Switch Theme</button>
+  </section>
+
+  <section>
+    <h2>🎮 Counter Game</h2>
+    <button id="incrementBtn">+ Increase</button>
+    <button id="decrementBtn">- Decrease</button>
+    <p>Count: <span id="counter">0</span></p>
+  </section>
+
+  <section>
+    <h2>❓ FAQ</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript makes web pages interactive.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What is DOM?</h3>
+      <p class="faq-answer">The Document Object Model lets us manipulate HTML dynamically.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>📋 Register</h2>
+    <form id="registerForm">
+      <label>
+        Name:
+        <input type="text" id="name" required>
+      </label>
+      <small class="error" id="nameError"></small>
+
+      <label>
+        Email:
+        <input type="email" id="email" required>
+      </label>
+      <small class="error" id="emailError"></small>
+
+      <label>
+        Password:
+        <input type="password" id="password" required>
+      </label>
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formSuccess"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
